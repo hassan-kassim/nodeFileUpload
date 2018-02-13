@@ -1,0 +1,28 @@
+{
+  "name": "fileupload",
+  "version": "1.0.0",
+  "description": "rest api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hassan-kassim/nodeFileUpload.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hassan-kassim/nodeFileUpload/issues"
+  },
+  "homepage": "https://github.com/hassan-kassim/nodeFileUpload#readme",
+  "devDependencies": {
+    "nodemon": "^1.14.12"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongodb": "^2.2.19"
+  }
+}
