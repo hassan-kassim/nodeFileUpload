@@ -1,7 +1,12 @@
-var express = require('express'),
-  app = express(),
-  port = process.env.PORT || 3000;
+const express        = require('express');
+const MongoClient    = require('mongodb').MongoClient;
+const bodyParser     = require('body-parser');
+const app            = express();
 
-app.listen(port);
+const port = 8000;
 
-console.log('todo list RESTful API server started on: ' + port);
+require('./api/routes')(app, {});
+
+app.listen(port, () => {
+  console.log('We are live on ' + port);
+});
